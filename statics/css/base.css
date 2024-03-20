@@ -1,0 +1,18 @@
+body,
+html {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Slackey, sans-serif;
+  background: #d3d3d3;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+div {
+  text-align: center !important;
+}

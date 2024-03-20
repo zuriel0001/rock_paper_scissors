@@ -1,0 +1,72 @@
+/* Styles for all buttons on the website */
+.button {
+  display: inline-block;
+  margin: 35px 10px;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Styles for buttons within popup content (if needed) */
+.popup-content button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.popup-content button:hover {
+  background-color: #3e4e81;
+}
+
+.popup-content button:active {
+  background-color: #3e4e8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Additional styles for specific button states (optional) */
+.button.disabled {
+  background-color: #ccc;
+  cursor: default;
+  /* remove hover and active styles */
+}
+
+.button.primary {
+  background-color: #388e3c;
+  /* customize styles for primary buttons */
+}
+
+.button.secondary {
+  background-color: #428bca;
+  /* customize styles for secondary buttons */
+}

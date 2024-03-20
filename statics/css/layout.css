@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-button,
+.center {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 20px auto;
+}

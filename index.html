@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>RPS</title>
+</head>
+
+<body>
+    <!-- Include the header -->
+    <div class="header-container">
+        <header>
+            <h1>ROCK PAPER SCISSORS</h1>
+            <p style="color: white; font-style: italic">The level playing field.......</p>
+        </header>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="home">
+        <div class="container">
+            <p>Rock, paper, scissors - the classic game of chance and strategy.</p>
+            <p>Can you predict your opponent's next move and counter it with yours?... </p>
+            <p>Play rock-paper-scissors and find out! It’s a game of psychology, logic, and luck.</p>
+            <p>Challenge the computer or a friend to a best-of-five series and see who comes on top.</p>
+            <p>Next time you want to make random decisions, settle disputes, and have fun, just come here and do it.</p>
+            <p style="color: red; font-family: OCR A Std, monospace; font-size: 30px;"> The Game has 3 simple rules: </p>
+            <p style="font-family: cursive; color: #000f89; font-size: 20px;">✔ Rock beats Scissors ...  ✔ Scissors beats Paper ...  ✔ Paper beats Rock </p>
+            <!-- <p>✔ Rock beats Scissors</p> -->
+            <!-- <p>✔ Scissors beats Paper</p> -->
+            <!-- <p>✔ Paper beats Rock</p> -->
+            <!-- <p style="font-family: Arial; color: red; font-size: 20px;">You can choose to play with the computer or a colleague.</p> -->
+            <p style="font-family: cursive; color: #000f89; font-size: 20px;">Start Instant Game or Play With a Colleague😊</p>
+            <div class="button-container">
+                <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
+                <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Computer Game Play Page -->
+    <div id="computer" class="container center-button">
+        <h2>YOUR SECTION WITH THE COMPUTER</h2>
+        <p style="color: red; font-family: OCR A Std, monospace; font-size: 25px, font-weight: bold;">There are 5 rounds per game section.</p>
+        <p>With the rules in mind, You can make a selection by long pressing on the either of the 3 images </p>
+        <P>When you make a choice, The computer does the same at the same time and the result displayed</P>
+        <div class="rounds">
+            <ms>Round: <span id="roundsPlayed">0</span></ms>
+        </div>
+        <div class="matchscores">
+            <ms>Player: <span id="playerResult">0</span></ms>
+            <ms>Computer: <span id="computerResult">0</span></ms>
+        </div>
+        <div class="choices">
+            <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock', 'computer')">
+            <img src="static/images/paper.png" alt="Paper" class="choice-image" onclick="playRound('paper', 'computer')">
+            <img src="static/images/scissors.png" alt="Scissors" class="choice-image" onclick="playRound('scissors', 'computer')">
+        </div>
+        <div class="result">
+            <p>Player chose: <span id="playerChoice">-</span></p>
+            <p>Computer chose: <span id="computerChoice">-</span></p>
+            <p>Result: <span id="roundResult">-</span></p>
+        </div>
+        <button class="button center" onclick="goBack()">BACK TO HOME</button>
+    </div>
+
+    <!-- Human Game Play Partner Search Page -->
+    <div id="human" class="container center-button">
+        <h2>PLAY WITH HUMAN</h2>
+        <p>To play with a colleague, you must share the game link with him/her.</p>
+        <p>You must both load the copied link in your browsers and begin the game</p>
+        <div class="link-section">
+            <p>The link to share is: <span id="gameLink">^the_link^</span></p>
+            <button class="button" onclick="copyLink()">COPY LINK</button>
+        <!-- </div> -->
+         <!-- <div class="result"> -->
+             <!-- <p>Player chose: <span id="playerChoice">-</span></p> -->
+             <!-- <p>Opponent chose: <span id="opponentChoice">-</span></p> -->
+             <!-- <p>Result: <span id="roundResult">-</span></p> -->
+         <!-- </div>  -->
+        <button class="button center" onclick="goBack()">BACK TO HOME</button>
+    </div>
+
+    <!-- Include the footer -->
+    <div class="footer-container">
+        <footer>
+            <p>© 2023 RPS. All rights reserved.</p>
+            <p>Made by https://github.com/zuriel0001 & https://github.com/chigalab1</p>
+        </footer>
+    </div>
+
+    <!-- Include the js files -->
+    <script src="static/js/main.js"></script>
+    <script src="static/js/human.js"></script>
+    <script src="static/js/computer.js"></script>
+    <!-- <script src="static/js/humanGame.js"></script> -->
+</body>
+
+</html>
